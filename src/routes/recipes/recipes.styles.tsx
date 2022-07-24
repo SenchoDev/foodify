@@ -15,6 +15,10 @@ export const Title = styled.h2`
   font-size: 4rem;
 `;
 
+export const Subtitle = styled.h4`
+  font-size: 2.6rem;
+`
+
 export const Caption = styled.h2`
   font-size: 2rem;
   color: red;

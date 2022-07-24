@@ -8,6 +8,7 @@ import {
   RecipeItemsWrapper,
   Caption,
   HeaderWrapper,
+  Subtitle
 } from "./recipes.styles";
 import { RecipesContext } from "../../contexts/recipes.context";
 
@@ -32,7 +33,7 @@ const Recipes = () => {
           })
           .map((recipe) => (
             <RecipeItem key={recipe.id} recipe={recipe} />
-          )) : <p>No recipes found</p>}
+          )) : <Subtitle>No recipes found</Subtitle>}
       </RecipeItemsWrapper>
     </RecipesContainer>
   );

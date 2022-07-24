@@ -27,9 +27,9 @@ export const SearchInputContainer = styled.form`
 export const IngredientsList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 1.5rem;
-  max-height: 50rem;
+  max-height: 40rem;
   overflow-y: scroll;
 `;
 
