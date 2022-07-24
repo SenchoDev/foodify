@@ -1,17 +1,20 @@
 import styled from "styled-components";
 
 export const InputBox = styled.input`
-  background: none;
-  color: ${(props) => props.theme.colors.text.primary};
-  font-size: 18px;
-  padding: 9px 10px 9px 5px;
-  display: block;
   width: 100%;
   border: none;
-  border-radius: 0;
-  border-bottom: 1px solid ${(props) => props.theme.colors.text.primary};
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.5rem;
+  width: 26rem;
+  padding: 0.5rem 1.5rem;
+
   &:focus {
     outline: none;
+  }
+  &::placeholder {
+    color: ${(props) =>  props.theme.colors.text.tertiary};
   }
 `;
 

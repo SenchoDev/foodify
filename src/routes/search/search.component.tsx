@@ -18,6 +18,7 @@ import Input from "../../components/search-input/search-input.component";
 import Button from "../../components/button/button.component";
 import Ingredient from "../../components/ingredient/ingredient.component";
 import { RecipesContext, Recipe } from "../../contexts/recipes.context";
+import { ReactComponent as SearchIcon } from "../../assets/search.svg";
 
 const Search = () => {
   const [search, setSearch] = useState("");
@@ -68,8 +69,9 @@ const Search = () => {
           name="Add Ingredients"
           value={search}
         />
-        <Button variant="normal" type="submit">
-          Add
+        <Button>
+          <SearchIcon fill="#615551"/>
+          <span>Add</span>
         </Button>
       </SearchInputContainer>
       <ListContainer>
@@ -84,7 +86,7 @@ const Search = () => {
             ))}
         </IngredientsList>
         <ButtonWrapper>
-          <Button variant="submit" onClick={getRecipes}>
+          <Button inverse onClick={getRecipes}>
             Search Recipes
           </Button>
         </ButtonWrapper>

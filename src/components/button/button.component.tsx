@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, FC } from "react";
 import { Button } from "./button.styles";
 
 export type CustomButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant: "normal" | "submit";
+  inverse?: boolean;
 };
 
 const CustomButton: FC<CustomButtonProps> = ({ children, ...otherProps }) => {

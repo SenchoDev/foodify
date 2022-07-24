@@ -1,4 +1,4 @@
-import { RecipeWrapper, Title } from "./recipe.styles";
+import { RecipeWrapper, Title, Image } from "./recipe.styles";
 import { Recipe } from "../../contexts/recipes.context";
 
 type RecipeProps = {
@@ -9,7 +9,7 @@ const RecipeItem = ({ recipe: { title, image } }: RecipeProps) => {
   return (
     <RecipeWrapper>
       <Title>{title}</Title>
-      <img src={image} alt={`${title}`} />
+      <Image src={image} alt={`${title}`} />
     </RecipeWrapper>
   );
 };
